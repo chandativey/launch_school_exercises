@@ -7,4 +7,5 @@ def my_value(b)
 end
 
 my_value(a)   # "Xy-zy"
-puts a        # "Xy-zy". The method b[2] mutates the original value of a. 
+puts a        # "Xy-zy". The method b[2] mutates the original value of a. Strings are mutable, 
+              # unlike numbers. 
