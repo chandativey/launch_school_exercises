@@ -9,7 +9,16 @@
 # and N (uppercase) responses; case sensitive input is generally a poor user 
 # interface choice. Whenever possible, accept both uppercase and lowercase inputs.
 
-puts ">> Do you want me to print something? (y/n)"
-input = gets.chomp.downcase
+loop do
+  puts ">> Do you want me to print something? (y/n)"
+  input = gets.chomp.downcase
 
-# puts "something" if input == 'y'
+  if input == 'y'
+    puts "something"
+    break
+  elsif input == 'n'
+    break
+  end
+
+  puts ">> Invalid input! Please enter y or n"
+end
